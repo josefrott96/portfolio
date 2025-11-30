@@ -1,0 +1,684 @@
+@font-face {
+    font-family: "Mark W01 Regular";
+    src: url("Fonts/5423483/230b3c63-b497-421b-ae7d-182024bef8ac.eot?#iefix");
+    src:
+        url("Fonts/5423483/230b3c63-b497-421b-ae7d-182024bef8ac.eot?#iefix") format("eot"),
+        url("Fonts/5423483/ec598369-4d91-4a16-9db3-6654f68d3c28.woff2") format("woff2"),
+        url("Fonts/5423483/90214997-3760-4b80-a23b-fec02ab55fac.woff") format("woff"),
+        url("Fonts/5423483/118e930e-1f56-4131-aee9-236212c0a10b.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Mark W01 Bold";
+    src: url("Fonts/5423411/8706c0b6-b423-44f7-ae1a-dd0aabd8a542.eot?#iefix");
+    src:
+        url("Fonts/5423411/8706c0b6-b423-44f7-ae1a-dd0aabd8a542.eot?#iefix") format("eot"),
+        url("Fonts/5423411/41c8162d-c2a6-49b0-8139-8bebab187588.woff2") format("woff2"),
+        url("Fonts/5423411/4fe94f2e-7892-4785-9663-0350a7adf8c0.woff") format("woff"),
+        url("Fonts/5423411/3a7daddb-0a78-4734-a699-6fe08d0e8b99.ttf") format("truetype");
+}
+
+/* This CSS resource incorporates links to font software which is the valuable copyrighted property of Monotype and/or its suppliers. You may not attempt to copy, install, redistribute, convert, modify or reverse engineer this font software. Please contact Monotype with any questions regarding Web Fonts: http://www.fontshop.com */
+
+/* body #CFE1EF */
+body {
+    margin: 0;
+    font:
+        16px/1.5 Mark W01 Regular,
+        sans-serif;
+    color: #000;
+    background: #fff;
+    text-align: center;
+}
+
+body h1 {
+    font-size: 1.25rem;
+}
+body h2 {
+    font-size: 1.125rem;
+}
+body h3 {
+    font-size: 1rem;
+}
+
+/* contentImpressum */
+#contentImpressum {
+    display: grid;
+    grid-template:
+        "header header header" auto
+        "text    text    text" auto
+        "footer  footer  footer" auto
+        / 1fr 1fr 1fr;
+    gap: 12px;
+    max-width: 924px;
+    margin: 0 auto;
+}
+
+/* contentIndex */
+#contentIndex {
+    color: #fff;
+    display: grid;
+    grid-template:
+        "header header header" auto
+        "box    box    box" auto
+        "box    box    box" auto
+        "footer footer footer" auto
+        / 1fr 1fr 1fr;
+    gap: 12px;
+    max-width: 924px;
+    margin: 0 auto;
+}
+
+/* fadeInUp */
+@keyframes fadeInUp {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.animatedFadeInUp {
+    opacity: 0;
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+    opacity: 0;
+}
+
+/* contentArchitektur */
+#contentArchitektur {
+    display: grid;
+    grid-template:
+        "header header header" auto
+        "box    box    box" auto
+        "box    box    box" auto
+        "box    box    box" auto
+        "footer footer footer" auto
+        / 1fr 1fr 1fr;
+    gap: 12px;
+    max-width: 924px;
+    margin: 0 auto;
+}
+
+/* contentKlimadesign */
+#contentKlimadesign {
+    display: grid;
+    grid-template:
+        "header header header" auto
+        "box    box    box" auto
+        "box    box    box" auto
+        "box    box    box" auto
+        "box    box    box" auto
+        "box    box    box" auto
+        "box    box    box" auto
+        "box    box    box" auto
+        "box    box    box" auto
+        "box    box    box" auto
+        "box    box    box" auto
+        "box    box    box" auto
+        "box    box    box" auto
+        "footer footer footer" auto
+        / 1fr 1fr 1fr;
+    gap: 12px;
+    max-width: 924px;
+    margin: 0 auto;
+}
+
+/* #contentPage */
+#contentPage {
+    display: grid;
+    grid-template:
+        "header header header" auto
+        "box1   box1   text" auto
+        "box1   box1   text" auto
+        "box2   box2   text" auto
+        "box2   box2   text" auto
+        "box3   box3   text" auto
+        "box3   box3   text" auto
+        "footer footer footer" auto
+        / 1fr 1fr 1fr;
+    gap: 12px;
+    max-width: 924px;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    grid-area: header;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+/* left - logo */
+header > div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1;
+}
+
+/* logo link */
+header > div:nth-child(1) a {
+    display: flex;
+}
+
+/* middle - navigation */
+header > nav {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0px;
+    grid-column: 2;
+    align-items: center;
+}
+
+/* styling */
+header img {
+    width: 60px;
+    transition: 0.2s ease;
+    margin: 
+}
+
+header img:hover {
+    opacity: 0.2;
+    transform: scale(1.1);
+}
+
+header li {
+    display: inline;
+    padding: 0 6px;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+/* link styling */
+header a {
+    color: #808080;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+header a:hover,
+header .current a {
+    color: #000;
+}
+
+/* header-light */
+header.header-light a {
+    color: #fff;
+}
+
+header.header-light a:hover {
+    color: #000;
+}
+
+/* footer */
+footer {
+    grid-area: footer;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .nested2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+footer section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    order: -1;
+}
+
+footer nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px 30px 30px;
+    order: 1;
+}
+
+footer img {
+    width: 30px;
+    margin: 0 7.5px;
+    transition: 0.2s ease;
+    will-change: transform, opacity;
+}
+
+footer img:hover {
+    opacity: 0.2;
+    transform: scale(1.1);
+}
+
+footer li {
+    display: inline;
+    padding: 0 6px;
+}
+
+footer a {
+    color: #808080;
+    text-decoration: none;
+    font-size: 12px;
+    transition: 0.2s ease;
+}
+
+footer a:hover,
+footer .current a {
+    color: #000;
+}
+
+/* footer-light */
+footer.footer-light a {
+    color: #fff;
+}
+
+footer.footer-light a:hover {
+    color: #000;
+}
+
+/* nested2 */
+.nested2 img {
+    padding: 0;
+}
+/* footer-light */
+footer.footer-light a {
+    color: #fff;
+}
+
+footer.footer-light a:hover {
+    color: #000;
+}
+
+/* nested & nested2 */
+.nested img {
+    margin: 30px;
+}
+
+.nested2 img {
+    padding: 0 15px;
+}
+/* link */
+.link {
+    color: #808080;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.link:hover {
+    color: #000;
+}
+
+/* download */
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 12px;
+    background: #000;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.download-btn:hover {
+    opacity: 0.2;
+}
+
+/* box */
+box {
+    max-width: 300px;
+    height: 300px;
+    display: grid;
+    place-items: center;
+    position: relative;
+    z-index: 1;
+    overflow: visible;
+    transition: z-index 0.2s ease;
+}
+
+box img {
+    width: 100%;
+    height: auto;
+}
+
+    .background {
+    height: 300px;
+    background: #fff;
+    display: grid;
+    place-items: center;
+    border-radius: 6px;
+    transition:
+        transform 0.2s ease,
+        filter 0.2s ease;
+}
+
+box:hover {
+    z-index: 100;
+}
+
+box:hover .background {
+    transform: scale(1.1);
+    filter: brightness(20%);
+}
+
+/* container */
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1); /* === 1 */
+    --stroke-width: 2px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    -webkit-text-stroke: var(--stroke-width) #000;
+    paint-order: stroke fill;
+    opacity: 0;
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+}
+
+box:hover .centered {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+box a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* box1, box2, box3 */
+box1,
+box2,
+box3 {
+    height: 612px;
+    display: grid;
+    place-items: center;
+    position: relative;
+    overflow: visible;
+    z-index: 1;
+    transition: z-index 0.2s ease;
+}
+
+box1 {
+    grid-area: box1;
+}
+box2 {
+    grid-area: box2;
+}
+box3 {
+    grid-area: box3;
+}
+
+box1 img,
+box2 img,
+box3 img {
+    width: 100%;
+    border-radius: 6px;
+    transition: transform 0.2s ease;
+}
+
+box1:hover,
+box2:hover,
+box3:hover {
+    z-index: 100;
+    cursor: zoom-in;
+}
+
+box1:hover img,
+box2:hover img,
+box3:hover img {
+    transform: scale(1.1);
+}
+
+/* iframe containers */
+.box1,
+.box2,
+.box3 {
+    height: 612px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.box1 {
+    grid-area: box1;
+    width: 100%;
+}
+.box2 {
+    grid-area: box2;
+    width: 100%;
+}
+.box3 {
+    grid-area: box3;
+    width: 100%;
+}
+
+.box1 iframe,
+.box2 iframe,
+.box3 iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+/* text */
+text {
+    grid-area: text;
+    text-align: left;
+}
+
+text h1 {
+    font:
+        24px/1 Mark W01 Bold,
+        sans-serif;
+    margin: 0;
+}
+
+text section {
+    font-size: 12px;
+}
+text sec {
+    font-weight: bold;
+}
+.english {
+    color: #a1a1a0;
+}
+
+/* invert */
+.invert {
+    filter: invert(100%);
+    opacity: 1;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(40px);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* media queries */
+@media screen and (max-width: 760px) {
+    /* contentIndex, contentArchitektur, contentKlimadesign, contentPage */
+    #contentIndex,
+    #contentArchitektur,
+    #contentKlimadesign,
+    #contentPage {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 12px;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    /* contentIndex */
+    #contentIndex {
+        grid-template-areas:
+            "header"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "footer";
+    }
+
+    /* contentArchitektur */
+    #contentArchitektur {
+        grid-template-areas:
+            "header"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "footer";
+    }
+
+    /* contentKlimadesign */
+    #contentKlimadesign {
+        grid-template-areas:
+            "header"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "footer";
+    }
+
+    /* contentPage */
+    #contentPage {
+        grid-template-areas:
+            "header"
+            "text"
+            "box1"
+            "box2"
+            "box3"
+            "footer";
+    }
+    
+   /* header */
+    header {
+        grid-template-columns: 1fr;
+    }
+
+    header > div:nth-child(1),
+    header > div:nth-child(3) {
+        display: none;
+    }
+
+    header > nav {
+        grid-column: 1;
+    } 
+    
+    /* container */
+    .centered {
+        font-weight: bold;
+        opacity: 1;
+    }
+
+    /* box */
+    box img {
+        opacity: 1;
+    }
+
+    /* box1; box2; box3 */
+    box1,
+    box2,
+    box3 {
+        height: 300px;
+    }
+
+    /* iframe */
+    .box1,
+    .box2,
+    .box3 {
+        width: auto;
+        height: 300px;
+    }
+
+    /* text */
+    text {
+        height: auto;
+    }
+
+    text p {
+        font-weight: bold;
+    }
+}
