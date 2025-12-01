@@ -191,12 +191,13 @@ header > nav {
 header img {
     width: 60px;
     transition: 0.2s ease;
-    margin:;
+    
 }
 
 header img:hover {
     opacity: 0.2;
     transform: scale(1.1);
+    will-change: transform, opacity;
 }
 
 header li {
