@@ -191,7 +191,7 @@ header > nav {
 header img {
     width: 60px;
     transition: 0.2s ease;
-    margin: 
+    margin:;
 }
 
 header img:hover {
@@ -226,9 +226,15 @@ header .current a {
 }
 
 /* index-light */
-.index-light * { color: #fff !important; }
-.index-light a:hover { color: #000 !important; }
-#contentIndex .fadeInUp * { color: #fff !important; }
+.index-light * {
+    color: #fff !important;
+}
+.index-light a:hover {
+    color: #000 !important;
+}
+#contentIndex .fadeInUp * {
+    color: #fff !important;
+}
 
 /* footer */
 footer {
@@ -359,7 +365,7 @@ box img {
     height: auto;
 }
 
-    .background {
+.background {
     height: 300px;
     background: #fff;
     display: grid;
@@ -447,7 +453,7 @@ box1:hover,
 box2:hover,
 box3:hover {
     z-index: 100;
-    cursor: ;
+    cursor:;
 }
 
 box1:hover img,
@@ -505,7 +511,7 @@ text h1 {
 }
 
 text section {
-    font-size: 12px;
+    font-size: 14px;
 }
 text sec {
     font-weight: bold;
@@ -623,8 +629,8 @@ text sec {
             "box3"
             "footer";
     }
-    
-   /* header */
+
+    /* header */
     header {
         grid-template-columns: 1fr;
     }
@@ -636,8 +642,8 @@ text sec {
 
     header > nav {
         grid-column: 1;
-    } 
-    
+    }
+
     /* container */
     .centered {
         font-weight: bold;
